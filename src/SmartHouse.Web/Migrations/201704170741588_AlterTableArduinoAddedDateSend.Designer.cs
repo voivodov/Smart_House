@@ -7,13 +7,13 @@ namespace SmartHouse.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class initial : IMigrationMetadata
+    public sealed partial class AlterTableArduinoAddedDateSend : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AlterTableArduinoAddedDateSend));
         
         string IMigrationMetadata.Id
         {
-            get { return "201704121141310_initial"; }
+            get { return "201704170741588_AlterTableArduinoAddedDateSend"; }
         }
         
         string IMigrationMetadata.Source

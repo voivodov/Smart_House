@@ -27,6 +27,8 @@ namespace SmartHouse.Web.Models
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
         }
 
+        public DbSet<ArduinoDataModelPost> ArduinoDataModelPosts { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

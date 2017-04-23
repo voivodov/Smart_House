@@ -1,0 +1,60 @@
+﻿@model IEnumerable<SmartHouse.Web.Models.ArduinoDataModelPost>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Arduino Data Mapping</h2>
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.outdoorCelsius)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.humidityProcent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.relay1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.relay2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.relay3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.relay4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateSend)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.outdoorCelsius)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.humidityProcent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.relay1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.relay2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.relay3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.relay4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateSend)
+        </td>
+    </tr>
+}
+
+</table>

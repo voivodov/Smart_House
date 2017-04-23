@@ -8,6 +8,21 @@ namespace SmartHouse.Web.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.ArduinoDataModelPosts",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        indoorCelsius = c.Double(nullable: false),
+                        outdoorCelsius = c.Double(nullable: false),
+                        humidityProcent = c.Double(nullable: false),
+                        relay1 = c.String(),
+                        relay2 = c.String(),
+                        relay3 = c.String(),
+                        relay4 = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -95,6 +110,7 @@ namespace SmartHouse.Web.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.ArduinoDataModelPosts");
         }
     }
 }
