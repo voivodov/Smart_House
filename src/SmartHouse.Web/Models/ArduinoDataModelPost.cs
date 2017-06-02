@@ -14,28 +14,20 @@ namespace SmartHouse.Web.Models
         public int Id { get; set; }
 
         [DisplayName("Indoor Celsius")]
-        public double indoorCelsius { get; set; }
+        public double @in { get; set; }
 
         [DisplayName("Outdoor Celsius")]
-        public double outdoorCelsius { get; set; }
+        public double @out { get; set; }
 
         [DisplayName("Humidity Procent")]
-        public double humidityProcent { get; set; }
+        public double @hum { get; set; }
 
-        [DisplayName("Relay 1")]
-        public string relay1 { get; set; }
-
-        [DisplayName("Relay 2")]
-        public string relay2 { get; set; }
-
-        [DisplayName("Relay 3")]
-        public string relay3 { get; set; }
-
-        [DisplayName("Relay 4")]
-        public string relay4 { get; set; }
 
         [DisplayName("Date Send")]
-        public string dateSend { get; set; }
+        public string time { get; set; }
 
+
+        [DisplayName("Room 1")]
+        public string room1 { get; set; }
     }
 }

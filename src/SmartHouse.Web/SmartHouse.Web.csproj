@@ -221,6 +221,14 @@
     <Compile Include="Migrations\201704170741588_AlterTableArduinoAddedDateSend.Designer.cs">
       <DependentUpon>201704170741588_AlterTableArduinoAddedDateSend.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706021309223_AlterTable.cs" />
+    <Compile Include="Migrations\201706021309223_AlterTable.Designer.cs">
+      <DependentUpon>201706021309223_AlterTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706021312277_AlterTable2.cs" />
+    <Compile Include="Migrations\201706021312277_AlterTable2.Designer.cs">
+      <DependentUpon>201706021312277_AlterTable2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationRole.cs" />
@@ -314,6 +322,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704170741588_AlterTableArduinoAddedDateSend.resx">
       <DependentUpon>201704170741588_AlterTableArduinoAddedDateSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706021309223_AlterTable.resx">
+      <DependentUpon>201706021309223_AlterTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706021312277_AlterTable2.resx">
+      <DependentUpon>201706021312277_AlterTable2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

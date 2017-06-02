@@ -9,50 +9,38 @@
 <table class="table table-hover table-bordered">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.outdoorCelsius)
+            @Html.DisplayNameFor(model => model.time)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.humidityProcent)
+            @Html.DisplayNameFor(model => model.@in)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.relay1)
+            @Html.DisplayNameFor(model => model.@out)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.relay2)
+            @Html.DisplayNameFor(model => model.hum)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.relay3)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.relay4)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.dateSend)
+            @Html.DisplayNameFor(model => model.room1)
         </th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.outdoorCelsius)
+            @Html.DisplayFor(modelItem => item.time)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.humidityProcent)
+            @Html.DisplayFor(modelItem => item.@in)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.relay1)
+            @Html.DisplayFor(modelItem => item.@out)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.relay2)
+            @Html.DisplayFor(modelItem => item.hum)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.relay3)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.relay4)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dateSend)
+            @Html.DisplayFor(modelItem => item.room1)
         </td>
     </tr>
 }

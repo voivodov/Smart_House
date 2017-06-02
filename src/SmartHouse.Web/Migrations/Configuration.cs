@@ -62,6 +62,15 @@ namespace SmartHouse.Web.Migrations
                 userManager.Create(userToInsert, "plovdev");
                 userManager.AddToRole(userToInsert.Id, "Administrator");
             }
+
+            if (!(context.Users.Any(u => u.UserName == "client@gmail.com")))
+            {
+                var userStore = new UserStore<ApplicationUser>(context);
+                var userManager = new UserManager<ApplicationUser>(userStore);
+                var userToInsert = new ApplicationUser { UserName = "client@gmail.com", Email = "a.voivodov@gmail.com" };
+                userManager.Create(userToInsert, "12345678");
+                userManager.AddToRole(userToInsert.Id, "Client");
+            }
         }
     }
 }
